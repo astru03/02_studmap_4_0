@@ -1,8 +1,18 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f4f4f9; /* Behalte die Hintergrundfarbe von App.css */
   color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #61dafb; /* React-Blau für Hover-Effekte */
 }
 
 main {

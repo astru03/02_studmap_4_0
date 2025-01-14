@@ -11,20 +11,17 @@ const Header = () => {
           exact="true" 
           to="/" 
           className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Startseite
+        > Startseite
         </NavLink>
         <NavLink 
           to="/dokumentation" 
           className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Dokumentation
+        > Dokumentation
         </NavLink>
         <NavLink 
           to="/impressum" 
           className={({ isActive }) => (isActive ? "active" : "")}
-        >
-          Impressum
+        > Impressum
         </NavLink>
       </nav>
     </header>
