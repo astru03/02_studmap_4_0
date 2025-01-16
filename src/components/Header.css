@@ -1,24 +1,37 @@
 .header {
  display: flex;
- justify-content: space-between;
- align-items: center;
+ justify-content: flex-start; /* Elemente nach links ausrichten */
+ align-items: center; /* Vertikale Zentrierung */
  padding: 10px 20px;
  background-color: #282c34;
  color: white;
+ position: fixed; /* Header fixieren */
+ top: 0;
+ left: 0;
+ width: 100%; /* Vollbreite */
+ z-index: 1000; /* Header bleibt über der Karte */
+ height: 50px; /* Feste Höhe */
+ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Schatten unter dem Header */
 }
+
 
 .logo {
  font-size: 1.5rem;
  font-weight: bold;
+ margin-right: 20px; /* Platz zwischen Logo und Navigation */
+}
+
+.nav {
+ display: flex; /* Flexbox für die Navigation */
+ gap: 20px; /* Abstand zwischen den Links */
 }
 
 .nav a {
- margin: 0 10px;
  color: white;
  text-decoration: none;
 }
 
 .nav a.active {
- border-bottom: 2px solid #61dafb;  /* Markiert den aktiven Tab */
+ border-bottom: 2px solid #61dafb; /* Markiert den aktiven Tab */
  font-weight: bold; /* Optional: Macht den aktiven Tab fetter */
 }
